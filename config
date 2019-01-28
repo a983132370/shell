@@ -4,4 +4,4 @@ KUBE_LOG_LEVEL="--v=0"
 # Should this cluster be allowed to run privileged docker containers
 KUBE_ALLOW_PRIV="--allow-privileged=false"
 # How the controller-manager, scheduler, and proxy find the apiserver
-KUBE_MASTER="--master=http://master:8080"
+KUBE_MASTER="--master=http://$master:8080"
