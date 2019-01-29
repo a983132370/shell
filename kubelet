@@ -7,5 +7,5 @@ KUBELET_HOSTNAME="--hostname-override=#slave"
 # location of the api-server
 KUBELET_API_SERVER="--api-servers=http://#master:8080"
 # pod infrastructure container
-#KUBELET_POD_INFRA_CONTAINER=""
+KUBELET_POD_INFRA_CONTAINER="--pod-infra-container-image=registry.access.redhat.com/rhel7/pod-infrastructure:latest"
 KUBELET_ARGS="--cluster-dns=#master --cluster-domain=atomic.io/network"
